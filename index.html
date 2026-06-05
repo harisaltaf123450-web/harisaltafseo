@@ -3,25 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Haris Altaf - Full Stack Developer, SEO Specialist & WordPress Developer. Building websites and optimizing search rankings.">
-    <meta name="keywords" content="Full Stack Developer, SEO Specialist, WordPress Developer, Web Development, Digital Marketing">
+    <meta name="description" content="Haris Altaf - Full Stack Developer, SEO Specialist & WordPress Developer. Building fast, SEO-friendly websites and applications. React, Node.js, WordPress expert.">
+    <meta name="keywords" content="Full Stack Developer, SEO Specialist, WordPress Developer, React, Web Development, SEO Optimization, Frontend Developer">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Haris Altaf - Full Stack Developer | SEO Specialist | WordPress Developer">
+    <meta property="og:description" content="Building fast, SEO-friendly websites and web applications with React, WordPress, and modern technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harisaltaf.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630">
+    
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Haris Altaf",
+      "jobTitle": "Full Stack Developer | SEO Specialist | WordPress Developer",
+      "url": "https://harisaltaf.com",
+      "sameAs": [
+        "https://linkedin.com/in/harisaltaf",
+        "https://github.com/harisaltaf123450-web"
+      ],
+      "knowsAbout": ["Web Development", "React", "SEO Optimization", "WordPress", "Node.js", "JavaScript"]
+    }
+    </script>
+
     <title>Haris Altaf - Full Stack Developer | SEO Specialist | WordPress Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="canonical" href="https://harisaltaf.com">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Haris Altaf</div>
+            <div class="logo">
+                <i class="fas fa-code"></i> Haris Altaf
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume" class="nav-resume-btn"><i class="fas fa-download"></i> Resume</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -31,470 +59,501 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO SECTION ===== -->
     <section id="home" class="hero">
-        <div class="container">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
             <div class="hero-content">
-                <div class="hero-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <h1>Haris Altaf</h1>
-                <p class="subtitle">Full Stack Developer | SEO Specialist | WordPress Developer</p>
+                <h1 class="hero-title">Haris Altaf</h1>
+                <p class="hero-subtitle">Full Stack Developer | SEO Specialist | WordPress Developer</p>
                 
                 <!-- Hero Stats -->
                 <div class="hero-stats">
-                    <div class="stat-item">
-                        <h3>50+</h3>
-                        <p>Websites Built</p>
+                    <div class="stat-box">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Websites Built</span>
                     </div>
-                    <div class="stat-item">
-                        <h3>100+</h3>
-                        <p>Clients Served</p>
+                    <div class="stat-box">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Clients Served</span>
                     </div>
-                    <div class="stat-item">
-                        <h3>3+</h3>
-                        <p>Years Experience</p>
+                    <div class="stat-box">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
                     </div>
                 </div>
 
-                <!-- Hero Buttons -->
+                <!-- CTA Buttons -->
                 <div class="hero-buttons">
-                    <a href="#projects" class="cta-button primary">View My Work</a>
-                    <a href="#contact" class="cta-button secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> View Projects
+                    </a>
+                    <a href="#resume" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="hero-social">
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:harisaltaf@example.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <i class="fas fa-user-circle"></i>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ===== ABOUT SECTION ===== -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I help businesses improve search rankings, increase organic traffic, and generate leads through SEO strategy and content optimization.</p>
-                    <p>With over 2 years of hands-on experience in the SEO industry, I specialize in creating data-driven strategies that deliver measurable results. My approach combines technical[...]
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>2+</h3>
-                            <p>Years Experience</p>
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <p class="about-intro">
+                        I help businesses build fast, SEO-friendly websites and web applications. I specialize in React, WordPress, SEO optimization, and modern frontend development. My goal is to create websites that not only look good but generate results.
+                    </p>
+
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h4>Experience</h4>
+                            <p>3+ years in web development and digital marketing</p>
                         </div>
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
+                        <div class="detail-item">
+                            <h4>Location</h4>
+                            <p>Pakistan · Available Worldwide (Remote)</p>
                         </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Client Satisfaction</p>
+                        <div class="detail-item">
+                            <h4>Availability</h4>
+                            <p>Available for Freelance & Project-based Work</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Languages</h4>
+                            <p>English, Urdu, Hindi</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Haris Altaf">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills">
         <div class="container">
-            <h2>Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <h3>SEO Audit</h3>
-                    <p>Comprehensive analysis of your website's SEO health and optimization opportunities</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3>On-Page SEO</h3>
-                    <p>Optimize your content, meta tags, and structure for better search visibility</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Local SEO</h3>
-                    <p>Improve your local search presence and attract nearby customers</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Keyword Research</h3>
-                    <p>Find high-value keywords that drive qualified traffic to your site</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-pen-fancy"></i>
-                    </div>
-                    <h3>Content Writing</h3>
-                    <p>SEO-optimized content that ranks and converts</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Technical SEO</h3>
-                    <p>Fix technical issues that impact your search rankings</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-timeline">
-                <!-- Upwork -->
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-info">
-                            <div class="company-logo">
-                                <i class="fab fa-upwork"></i>
-                            </div>
-                            <div class="company-details">
-                                <h3>SEO Specialist & WordPress Professional</h3>
-                                <p class="company-name">Upwork - Self-employed</p>
-                                <p class="duration"><i class="fas fa-calendar"></i> May 2024 - Present (2 yrs 2 mos)</p>
-                                <p class="location"><i class="fas fa-map-marker-alt"></i> Pakistan · Remote</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience-description">
-                        <p>I work as an SEO Specialist and WordPress professional, helping businesses improve their online visibility, search rankings, and website performance. I have successfull[...]
-                        <p><strong>Expertise:</strong> On-page SEO, Technical SEO, Keyword Research, Content Optimization, WordPress Website Optimization</p>
-                        <div class="skills-tag">
-                            <span>SEO</span>
-                            <span>Off-Page SEO</span>
-                            <span>WordPress</span>
-                            <span>Content Writing</span>
-                        </div>
+            <h2 class="section-title section-title-light">Skills & Expertise</h2>
+            
+            <div class="skills-wrapper">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Tailwind CSS</span>
                     </div>
                 </div>
 
-                <!-- Time Business News -->
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-info">
-                            <div class="company-logo">
-                                <i class="fas fa-newspaper"></i>
-                            </div>
-                            <div class="company-details">
-                                <h3>Search Engine Optimization Specialist</h3>
-                                <p class="company-name">Time Business News ✔ - Internship</p>
-                                <p class="duration"><i class="fas fa-calendar"></i> May 2023 - Present (3 yrs 2 mos)</p>
-                                <p class="location"><i class="fas fa-map-marker-alt"></i> Pakistan · Remote</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience-description">
-                        <p>I work as an SEO specialist and WordPress professional, helping businesses improve their online visibility, search rankings, and website performance through local and g[...]
-                        <p><strong>Key Achievements:</strong> Guest posting, link building, content publishing on business and news-related websites, brand authority building, domain strength imp[...]
-                        <div class="skills-tag">
-                            <span>SEO</span>
-                            <span>WordPress</span>
-                            <span>Guest Posting</span>
-                            <span>Link Building</span>
-                        </div>
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Express</span>
+                        <span class="skill-badge">PHP</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">MongoDB</span>
                     </div>
                 </div>
 
-                <!-- Quickficks -->
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-info">
-                            <div class="company-logo">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="company-details">
-                                <h3>Web Content Writer</h3>
-                                <p class="company-name">QUICKFICKS PVT LTD - Full-time</p>
-                                <p class="duration"><i class="fas fa-calendar"></i> Jan 2024 - Present (2 yrs 6 mos)</p>
-                                <p class="location"><i class="fas fa-map-marker-alt"></i> Pakistan · Remote</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience-description">
-                        <p>Spearheaded SEO campaigns focused on on-page SEO, local SEO, and keyword optimization to drive sustainable organic growth. Developed SEO-optimized content and improved [...]
-                        <p><strong>Key Achievements:</strong> Increased user engagement, referral traffic, and domain authority through strategic blog writing and guest posting on business platfo[...]
-                        <div class="skills-tag">
-                            <span>On-Page SEO</span>
-                            <span>Local SEO</span>
-                            <span>Content Writing</span>
-                            <span>Guest Posting</span>
-                        </div>
+                <!-- CMS -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">CMS & Platforms</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">WordPress</span>
+                        <span class="skill-badge">Shopify</span>
+                        <span class="skill-badge">WooCommerce</span>
                     </div>
                 </div>
 
-                <!-- Your Functional CMO -->
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-info">
-                            <div class="company-logo">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="company-details">
-                                <h3>Search Engine Optimization Specialist</h3>
-                                <p class="company-name">Your Functional CMO - Freelance</p>
-                                <p class="duration"><i class="fas fa-calendar"></i> Jan 2024 - Present (2 yrs 6 mos)</p>
-                                <p class="location"><i class="fas fa-map-marker-alt"></i> Pakistan · Remote</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience-description">
-                        <p>Led SEO initiatives including keyword research, on-page and technical SEO, local SEO, and off-page link building. Used tools like SEMrush, Ahrefs, and Google Search Con[...]
-                        <p><strong>Tools Used:</strong> SEMrush, Ahrefs, Google Search Console, Google Analytics</p>
-                        <div class="skills-tag">
-                            <span>Technical SEO</span>
-                            <span>Keyword Research</span>
-                            <span>Link Building</span>
-                            <span>Analytics</span>
-                        </div>
+                <!-- SEO -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">SEO & Performance</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Technical SEO</span>
+                        <span class="skill-badge">On-Page SEO</span>
+                        <span class="skill-badge">Keyword Research</span>
+                        <span class="skill-badge">Core Web Vitals</span>
+                        <span class="skill-badge">Analytics</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- ===== PROJECTS SECTION ===== -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Case Studies & Projects</h2>
-            <p class="section-subtitle">Real Results from SEO Implementation</p>
+            <h2 class="section-title">Featured Projects</h2>
+            
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-before-after">
-                        <div class="before-after-container">
-                            <div class="before">
-                                <div class="label">BEFORE</div>
-                                <div class="stat-box">
-                                    <p class="number">4,250</p>
-                                    <p class="label-text">Monthly Traffic</p>
-                                </div>
-                                <div class="stat-box">
-                                    <p class="number">45</p>
-                                    <p class="label-text">Keyword Rankings</p>
-                                </div>
-                            </div>
-                            <div class="arrow">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                            <div class="after">
-                                <div class="label">AFTER</div>
-                                <div class="stat-box after-stat">
-                                    <p class="number">28,500</p>
-                                    <p class="label-text">Monthly Traffic</p>
-                                </div>
-                                <div class="stat-box after-stat">
-                                    <p class="number">180</p>
-                                    <p class="label-text">Keyword Rankings</p>
-                                </div>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="E-Commerce Store">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Live">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fas fa-code"></i>
+                            </a>
                         </div>
                     </div>
-                    <h3>E-Commerce Store SEO Optimization</h3>
-                    <p><strong>Client:</strong> Online Fashion Retailer</p>
-                    <p class="description">Comprehensive SEO overhaul including technical improvements, content optimization, and link building strategy.</p>
-                    <div class="project-results">
-                        <span class="result-badge"><i class="fas fa-check"></i> 571% Traffic Increase</span>
-                        <span class="result-badge"><i class="fas fa-check"></i> Page 1 Rankings</span>
-                        <span class="result-badge"><i class="fas fa-check"></i> 45% Higher Conversions</span>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Store</h3>
+                        <p class="project-problem"><strong>Problem:</strong> Client needed a fast, conversion-optimized online store</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-results">
+                            <p><i class="fas fa-check"></i> 40% faster loading</p>
+                            <p><i class="fas fa-check"></i> Mobile optimized</p>
+                            <p><i class="fas fa-check"></i> SEO score 95+</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn primary-btn">Live Demo</a>
+                            <a href="#" class="project-btn secondary-btn">GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-before-after">
-                        <div class="before-after-container">
-                            <div class="before">
-                                <div class="label">BEFORE</div>
-                                <div class="stat-box">
-                                    <p class="number">1,200</p>
-                                    <p class="label-text">Monthly Traffic</p>
-                                </div>
-                                <div class="stat-box">
-                                    <p class="number">12</p>
-                                    <p class="label-text">Keyword Rankings</p>
-                                </div>
-                            </div>
-                            <div class="arrow">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                            <div class="after">
-                                <div class="label">AFTER</div>
-                                <div class="stat-box after-stat">
-                                    <p class="number">15,800</p>
-                                    <p class="label-text">Monthly Traffic</p>
-                                </div>
-                                <div class="stat-box after-stat">
-                                    <p class="number">95</p>
-                                    <p class="label-text">Keyword Rankings</p>
-                                </div>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-adf4e565db13?w=500&h=300&fit=crop" alt="Agency Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Live">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fas fa-code"></i>
+                            </a>
                         </div>
                     </div>
-                    <h3>Local Business SEO Campaign</h3>
-                    <p><strong>Client:</strong> Digital Marketing Agency</p>
-                    <p class="description">Local SEO strategy with Google Business Profile optimization and local citation building.</p>
-                    <div class="project-results">
-                        <span class="result-badge"><i class="fas fa-check"></i> 1,217% Traffic Growth</span>
-                        <span class="result-badge"><i class="fas fa-check"></i> Top 3 Local Rankings</span>
-                        <span class="result-badge"><i class="fas fa-check"></i> 35+ Lead Conversions</span>
+                    <div class="project-info">
+                        <h3 class="project-title">Marketing Agency Website</h3>
+                        <p class="project-problem"><strong>Problem:</strong> Brand needed modern, responsive website with lead capture</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">SEO</span>
+                            <span class="tech-tag">Elementor</span>
+                        </div>
+                        <div class="project-results">
+                            <p><i class="fas fa-check"></i> 150+ monthly leads</p>
+                            <p><i class="fas fa-check"></i> Top 3 rankings</p>
+                            <p><i class="fas fa-check"></i> 2x organic traffic</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn primary-btn">Live Demo</a>
+                            <a href="#" class="project-btn secondary-btn">GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <div class="project-before-after">
-                        <div class="before-after-container">
-                            <div class="before">
-                                <div class="label">BEFORE</div>
-                                <div class="stat-box">
-                                    <p class="number">2,500</p>
-                                    <p class="label-text">Monthly Traffic</p>
-                                </div>
-                                <div class="stat-box">
-                                    <p class="number">28</p>
-                                    <p class="label-text">Keyword Rankings</p>
-                                </div>
-                            </div>
-                            <div class="arrow">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                            <div class="after">
-                                <div class="label">AFTER</div>
-                                <div class="stat-box after-stat">
-                                    <p class="number">22,300</p>
-                                    <p class="label-text">Monthly Traffic</p>
-                                </div>
-                                <div class="stat-box after-stat">
-                                    <p class="number">156</p>
-                                    <p class="label-text">Keyword Rankings</p>
-                                </div>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="SaaS Application">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Live">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fas fa-code"></i>
+                            </a>
                         </div>
                     </div>
-                    <h3>SaaS Product Content Strategy</h3>
-                    <p><strong>Client:</strong> Software as a Service Company</p>
-                    <p class="description">Content-driven SEO strategy with pillar pages, cluster content, and strategic link building.</p>
-                    <div class="project-results">
-                        <span class="result-badge"><i class="fas fa-check"></i> 792% Traffic Increase</span>
-                        <span class="result-badge"><i class="fas fa-check"></i> 5-Star Authority Build</span>
-                        <span class="result-badge"><i class="fas fa-check"></i> $150K+ Revenue Impact</span>
+                    <div class="project-info">
+                        <h3 class="project-title">SaaS Dashboard</h3>
+                        <p class="project-problem"><strong>Problem:</strong> Build scalable analytics dashboard for enterprise</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-results">
+                            <p><i class="fas fa-check"></i> 99.9% uptime</p>
+                            <p><i class="fas fa-check"></i> 50K+ daily users</p>
+                            <p><i class="fas fa-check"></i> Real-time data</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn primary-btn">Live Demo</a>
+                            <a href="#" class="project-btn secondary-btn">GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2>Skills & Tools</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-search"></i>
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Freelance Web Developer</h3>
+                            <span class="timeline-date">2025 – Present</span>
+                        </div>
+                        <p class="timeline-description">Building custom websites, applications, and optimizing SEO for clients worldwide. Specializing in React, WordPress, and performance optimization.</p>
+                        <div class="timeline-skills">
+                            <span>React</span>
+                            <span>WordPress</span>
+                            <span>SEO</span>
+                            <span>Full Stack</span>
+                        </div>
                     </div>
-                    <h3>Google Search Console</h3>
-                    <p>Expert level</p>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-chart-bar"></i>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>SEO Specialist</h3>
+                            <span class="timeline-date">2024 – 2025</span>
+                        </div>
+                        <p class="timeline-description">Led SEO campaigns for 20+ clients, improving search rankings and organic traffic. Implemented technical SEO, content strategy, and link building initiatives.</p>
+                        <div class="timeline-skills">
+                            <span>Technical SEO</span>
+                            <span>Content Strategy</span>
+                            <span>Link Building</span>
+                            <span>Analytics</span>
+                        </div>
                     </div>
-                    <h3>Google Analytics</h3>
-                    <p>Expert level</p>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Frontend Developer</h3>
+                            <span class="timeline-date">2023 – 2024</span>
+                        </div>
+                        <p class="timeline-description">Developed responsive web interfaces using React and modern JavaScript. Collaborated with designers and backend developers to deliver high-quality applications.</p>
+                        <div class="timeline-skills">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>API Integration</span>
+                        </div>
                     </div>
-                    <h3>Ahrefs</h3>
-                    <p>Advanced</p>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fab fa-wordpress"></i>
-                    </div>
-                    <h3>WordPress SEO</h3>
-                    <p>Advanced</p>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-pen"></i>
-                    </div>
-                    <h3>Content Optimization</h3>
-                    <p>Expert level</p>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                    <h3>Technical SEO</h3>
-                    <p>Expert level</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ===== STATISTICS SECTION ===== -->
+    <section id="stats" class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-value">20+</h3>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">10+</h3>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">3+</h3>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-value">100%</h3>
+                    <p class="stat-label">Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Haris delivered our website ahead of schedule and improved our SEO rankings significantly. Professional, responsive, and results-driven. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>E-Commerce Store Owner</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "We saw a 200% increase in organic traffic within 3 months. Haris's SEO expertise and technical skills made a real difference for our business."
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Ahmed Hassan</h4>
+                        <p>Marketing Agency Director</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Great communication, excellent technical knowledge, and pixel-perfect execution. Haris is the developer you want on your team!"
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Emily Chen</h4>
+                        <p>Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Ready to improve your SEO? Let's talk!</p>
-            <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Your Message" rows="6" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            <h2 class="section-title section-title-light">Let's Work Together</h2>
+            <p class="contact-subtitle">Have a project in mind? Let's discuss how I can help you succeed.</p>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:harisaltaf@example.com">harisaltaf@example.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/1234567890">+92 XXX XXXXXXX</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Pakistan · Available Worldwide</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:harisaltaf@example.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Haris Altaf</h4>
-                    <p>Full Stack Developer | SEO Specialist | WordPress Developer</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Haris Altaf. All rights reserved.</p>
+                <p>&copy; 2025 Haris Altaf. All rights reserved. | <a href="#home">Back to Top</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- Hidden Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="resume-header">
+                <h2>My Resume</h2>
+                <a href="resume.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download CV (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
